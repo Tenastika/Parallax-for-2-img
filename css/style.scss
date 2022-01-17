@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  font: 400 24px/40px 'Verdana';
+  @media (max-width: 1440px) {
+    font: 400 18px/35px 'Verdana'; 
+  }
+  @media (max-width: 768px) {
+    font: 400 16px/30px 'Verdana'; 
+  }
+  
+}
+
+section {
+  width: 100%;
+  
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 10% 5% 5%;
+  p {
+    margin-bottom: 3%;
+  }
+}
+h2 {
+  font: 800 3rem/3rem 'Verdana';
+  margin-bottom: 2.5rem;
+  @media (max-width: 768px) {
+    font: 800 2rem/3rem 'Verdana'; 
+  }
+}
+.parallax1 {
+  background: url(../assets/img/bg1.jpg) center top /cover no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  &__container { 
+    color: #fff;
+    padding-bottom: 30px;
+    p {
+      margin-bottom: 0;
+    } 
+  }
+
+  &__title {
+    max-width: 500px;
+  }
+
+}
+
+.block1 {
+  background-color: rgb(212, 239, 255);
+}
+
+.parallax2 {
+  background: url(../assets/img/bg2.jpg) center top /cover no-repeat;
+  background-attachment: fixed;
+  height: 800px;
+  @media (max-width: 763px) {
+    height: 400px;
+  }
+}
+
+.block2 {
+  background-color: rgb(252, 255, 217);
+}
